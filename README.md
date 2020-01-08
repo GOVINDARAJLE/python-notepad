@@ -10,11 +10,7 @@
                                       filetypes=[("All Files", "*.*"),
                                                  ("Text Documents", "*.txt")])
 
-        if self.__file == "":
 
-            # no file to open
-            self.__file = None
-        else:
 
             # Try to open the file
             # set the window title
@@ -32,7 +28,6 @@
         self.__file = None
         self.__thisTextArea.delete(1.0, END)
 
-    def __saveFile(self):
 
         if self.__file == None:
             # Save as new file
@@ -41,9 +36,6 @@
                                             filetypes=[("All Files", "*.*"),
                                                        ("Text Documents", "*.txt")])
 
-            if self.__file == "":
-                self.__file = None
-            else:
 
                 # Try to save the file
                 file = open(self.__file, "w")
@@ -53,24 +45,12 @@
                 # Change the window title
                 self.__root.title(os.path.basename(self.__file) + " - Notepad")
 
+# Python GUI – tkinter
+Python offers multiple options for developing GUI (Graphical User Interface). Out of all the GUI methods, tkinter is the most commonly used method. It is a standard Python interface to the Tk GUI toolkit shipped with Python. Python with tkinter is the fastest and easiest way to create the GUI applications. Creating a GUI using tkinter is an easy task.
+To create a tkinter app:
 
-        else:
-            file = open(self.__file, "w")
-            file.write(self.__thisTextArea.get(1.0, END))
-            file.close()
-
-    def __cut(self):
-        self.__thisTextArea.event_generate("<<Cut>>")
-
-    def __copy(self):
-        self.__thisTextArea.event_generate("<<Copy>>")
-
-    def __paste(self):
-        self.__thisTextArea.event_generate("<<Paste>>")
-
-    def run(self):
-
-        # Run main application
-        self.__root.mainloop()
-
-    # Run main application
+Importing the module – tkinter
+Create the main window (container)
+Add any number of widgets to the main window
+Apply the event Trigger on the widgets.
+Importing tkinter is same as importing any other module in the Python code. Note that the name of the module in Python 2.x is ‘Tkinter’ and in Python 3.x it is ‘tkinter’.
