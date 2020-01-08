@@ -46,7 +46,6 @@
                 self.__root.title(os.path.basename(self.__file) + " - Notepad")
 
 # Python GUI – tkinter
-
 Python offers multiple options for developing GUI (Graphical User Interface). Out of all the GUI methods, tkinter is the most commonly used method. It is a standard Python interface to the Tk GUI toolkit shipped with Python. Python with tkinter is the fastest and easiest way to create the GUI applications. Creating a GUI using tkinter is an easy task.
 To create a tkinter app:
 
@@ -55,8 +54,6 @@ Create the main window (container)
 Add any number of widgets to the main window
 Apply the event Trigger on the widgets.
 Importing tkinter is same as importing any other module in the Python code. Note that the name of the module in Python 2.x is ‘Tkinter’ and in Python 3.x it is ‘tkinter’.
-
-
 
  1. Tk(screenName=None,  baseName=None,  className=’Tk’,  useTk=1): To create a main window, tkinter offers a method ‘Tk(screenName=None,  baseName=None,  className=’Tk’,  useTk=1)’. To change the name of the window, you can change the className to the desired one. The basic code used to create the main window of the application is:
 
@@ -68,9 +65,9 @@ Importing tkinter is same as importing any other module in the Python code. Note
 
  tkinter also offers access to the geometric configuration of the widgets which can organize the widgets in the parent windows. There are mainly three geometry manager classes class.
 
- 1.pack()
+# 1.pack()
             method:It organizes the widgets in blocks before placing in the parent widget.
- 2.grid() 
+# 2.grid() 
             method:It organizes the widgets in grid (table-like structure) before placing in the parent widget.
- 3.place()
+# 3.place()
             method:It organizes the widgets by placing them on specific positions directed by the programmer.
