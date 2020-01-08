@@ -65,9 +65,9 @@ Importing tkinter is same as importing any other module in the Python code. Note
 
  tkinter also offers access to the geometric configuration of the widgets which can organize the widgets in the parent windows. There are mainly three geometry manager classes class.
 
-# 1.pack()
+ 1.pack()
             method:It organizes the widgets in blocks before placing in the parent widget.
-# 2.grid() 
+ 2.grid() 
             method:It organizes the widgets in grid (table-like structure) before placing in the parent widget.
-# 3.place()
+ 3.place()
             method:It organizes the widgets by placing them on specific positions directed by the programmer.
