@@ -62,7 +62,9 @@ class Notepad:
         self.__root.grid_columnconfigure(0, weight=1)
 
         # Add controls (widget)
-        self.__thisTextArea.grid(sticky=N + E + S + W)
+      #  self.__thisTextArea.grid(sticky=N + E + S + W)
+
+        #     Menu Bar Start Here
 
         # To open new file
         self.__thisFileMenu.add_command(label="New",
@@ -100,12 +102,12 @@ class Notepad:
                                        menu=self.__thisEditMenu)
 
         # To create a feature of description of the notepad
-        self.__thisHelpMenu.add_command(label="About Notepad"
+        self.__thisHelpMenu.add_command(label="About Notepad--"
                                               "govinda Rajle",
                                         command=self.__showAbout)
         self.__thisMenuBar.add_cascade(label="Help",
                                        menu=self.__thisHelpMenu)
-
+        #   menu bar End Here
         self.__root.config(menu=self.__thisMenuBar)
 
         self.__thisScrollBar.pack(side=RIGHT, fill=Y)
